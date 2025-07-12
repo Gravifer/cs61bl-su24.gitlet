@@ -246,7 +246,6 @@ public class Utils {
     }
 
 
-
     /* MESSAGES AND ERROR REPORTING */
 
     /** Return a GitletException whose message is composed of MSG and ARGS as
