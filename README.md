@@ -1,16 +1,41 @@
-# UCB CS61B(L) Summer 2025
+# Bring the CS61 Gitlet project back to life
 
-[Official site](https://cs61bl.org/su25)
+I auditted the [su25](https://cs61bl.org/su25/) version of UC Berkeley's celebrated [CS61B](https://sp21.datastructur.es/).
+There was an interesting project in some previous versions of the course, namely 
+[Gitlet](https://sp21.datastructur.es/materials/proj/proj2/proj2),
+which is not in this summer's curriculum. 
+Nevertheless, I decided to try it out.  
+This repository contains the cherry-picked project files, 
+which I then make small adjustments, to so as to make the project layout the same as su25 material.
+I also added a simple logger to the `Utils` class, so that one can more easily do print debugging themselves.
 
-## Notable differences from course guidelines
+## Getting Started
 
-- Using [Summer 2025](https://cs61bl.org/su25/) material:
-  the [official](https://cs61bl.org/su25/policies/#auditing-61bl) [policies](https://sp25.datastructur.es/policies/#auditing-cs61b)
-  recommend using the [Spring 2021](https://sp21.datastructur.es/) material
-  to utilize the public autograder;
-  I made the trade-off to follow the latest course work.  
-  Note that Homeworks need to be accessed via Gradescope and thus I just supplement with SP21 ones.
-- Partially using [VS Code](https://code.visualstudio.com/):
-  the course [highly recommends](https://cs61bl.org/su25/labs/lab01/#intellij-setup:~:text=We%20highly%20recommend%20using%20IntelliJ.) using [JetBrains IntelliJ IDEA](https://www.jetbrains.com/help/idea/getting-started.html) [Community edition](https://www.jetbrains.com/products/compare/?product=idea&product=idea-ce)
-  with [Git](https://git-scm.com/doc) CLI;
-I use the Ultimate edition via GitHub Student Developer Pack, utilizing the Git extension, as well as the VS Code editor with the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension (by [GitKraken](https://www.gitkraken.com/gitlens)).
+To do the project for and by yourself
+1. Read through the course project material. [\[su24 ver\]](https://cs61bl.org/su24/projects/gitlet/) [\[sp21 ver\]](https://sp21.datastructur.es/materials/proj/proj2/proj2)
+2. [Clone](https://github.com/new?template_name=cs61bl-su24.gitlet&template_owner=Gravifer) using this repo as template.
+3. Use [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?:~:text=free%20to%20use-%2CIntelliJ%20IDEA%20Community%20Edition).
+   The Community version is the one that is recommended for the course, be sure to scroll down the page to see it.  
+   The project structure and test-running settings are defined with IDEA configuration files,
+   so there would be more work if you use [Gradle](https://gradle.org) or [Maven](https://maven.apache.org/).
+4. Pull the starter code from your new repository, and start coding!
+
+-----
+
+**Notes**
+- If you want to audit this great course in whole as well, the official recommendation is to use the [sp21](https://sp21.datastructur.es/) version;
+there is a publicly available autograder for that version only.
+- Note that [the logger](https://github.com/Gravifer/cs61bl-su24.gitlet/blob/1270a3dd7597515d4b26cdd0aa44565010cf2eaa/gitlet/src/Utils.java#L270) I added in `Utils`, is considered a non-trivial field;
+   I hacked `GitletTests` to make it work, so your code would fail the actual autograder used in the course at Berkeley.
+   But this version of `GitletTest` does have better readability, which will make your life easier.
+- To look at my work, see the [demo](https://github.com/Gravifer/cs61bl-su24.gitlet/tree/demo) branch.
+  Make sure to check out these other awesome Gitlet implementations as well:
+  - https://github.com/Abdelrhmansersawy/Gitlet
+  - https://github.com/annetta-zheng/Gitlet
+  - https://github.com/hrishikeshh/Gitlet
+  - https://github.com/jacobakh/Gitlet
+  - https://github.com/pichardo13/gitlet
+ 
+Copyright information: 
+  I make no claim to any intellectual property of CS61B and CS61BL staff, or other original authors. 
+  I cannot provide a license for this repo, since I cannot be sure of the status of attribution.
